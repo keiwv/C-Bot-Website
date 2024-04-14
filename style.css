@@ -4,9 +4,9 @@
     height: 950px;
 }
 
-.logo {
-    width: 80px;
-    height: 8vh;
+.logo img {
+    width: 100px;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -97,10 +97,12 @@ aside {
 .aside-container {
     background-color: white;
     width: 400px;
-    height: 900px;
+    height: 700px;
     border-radius: 30px;
     box-shadow: 5px 5px 1000px rgba(131, 131, 131, 0.3);
-    margin-top: 120px;
+    margin-top: 300px;
+    margin-bottom: 175px;
+    margin-left: 50px;
 }
 
 .aside-container .aside-img-text {
@@ -184,13 +186,16 @@ button:hover {
 @media (min-width: 2555px) {
     .container {
         width: 80vh;
+        max-width: 1200px;
+        ;
         padding-left: 550px;
         height: 80vh;
     }
 
     .aside-container {
         background-color: white;
-        width: 650px;
+        width: 50%;
+        max-width: 800px;
         height: 944px;
         border-radius: 30px;
         box-shadow: 5px 5px 1000px rgba(131, 131, 131, 0.3);
