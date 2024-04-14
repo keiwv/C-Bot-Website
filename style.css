@@ -7,10 +7,19 @@ body {
 
 header {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 20px;
+    background-color: rgba(100, 37, 37, 0.5);
+    color: #ffffff;
+    padding: 1px;
     text-align: center;
+}
+
+.header-blur {
+    position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 
 h1 {
@@ -68,14 +77,4 @@ nav ul li a:hover {
     flex-direction: column;
     text-align: center;
     margin: 10px;
-}
-
-.header-blur {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    filter: blur(10px);
 }
