@@ -11,10 +11,9 @@
     height: auto;
 }
 
-.logo {
-    width: 640px;
-    height: 8vh;
-    padding: 40px 0 0 35px;
+.logo img {
+    width: 100px;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -74,6 +73,7 @@
     height: 50px;
     border-radius: 8px;
     padding-top: 8px;
+    margin-top: 70px;
 }
 
 .Buttons button {
@@ -99,10 +99,12 @@ aside {
 .aside-container {
     background-color: white;
     width: 400px;
-    height: 900px;
+    height: 700px;
     border-radius: 30px;
     box-shadow: 5px 5px 1000px rgba(131, 131, 131, 0.3);
-    margin-top: 120px;
+    margin-top: 300px;
+    margin-bottom: 175px;
+    margin-left: 50px;
 }
 
 .aside-container .aside-img-text {
@@ -115,8 +117,7 @@ aside {
     text-align: center;
 }
 
-.disabled
-{
+.disabled {
     pointer-events: none;
     cursor: default;
     opacity: 0;
@@ -157,11 +158,11 @@ aside {
     height: 24px;
     padding-left: 12px;
 }
-.footer-page a
-{
+
+.footer-page a {
     color: white;
     text-decoration: none;
-    
+
 }
 
 button:hover {
@@ -184,12 +185,16 @@ button:hover {
 @media (min-width: 2555px) {
     .container {
         width: 80vh;
+        max-width: 1200px;
+        ;
         padding-left: 550px;
         height: 80vh;
     }
+
     .aside-container {
         background-color: white;
-        width: 650px;
+        width: 50%;
+        max-width: 800px;
         height: 944px;
         border-radius: 30px;
         box-shadow: 5px 5px 1000px rgba(131, 131, 131, 0.3);
@@ -217,7 +222,7 @@ button:hover {
         height: 650px;
         border: none;
     }
-    
+
     #input-text:focus {
         outline: none;
         resize: none;
@@ -241,6 +246,7 @@ button:hover {
         display: flex;
         height: 91.8vh;
     }
+
     #input-text {
         width: 90%;
         max-height: 80vh;
@@ -255,7 +261,7 @@ button:hover {
         height: 850px;
         border: none;
     }
-    
+
     #input-text:focus {
         outline: none;
         resize: none;
@@ -283,7 +289,6 @@ button:hover {
     src: url("fonts/Emizen.otf") format("truetype");
     font-weight: 400;
     font-style: normal;
-}
 
 @font-face {
     font-family: "JetBrains Mono";
@@ -291,3 +296,4 @@ button:hover {
     font-weight: 400;
     font-style: normal;
 }
+
