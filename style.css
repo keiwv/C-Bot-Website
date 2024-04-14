@@ -145,8 +145,8 @@ aside {
     height: 8vh;
     margin-top: 2px;
     color: white;
-    font-family: "Emizen", sans-serif;
-    font-size: 30px;
+    font-family: "JetBrains Mono", sans-serif;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -283,6 +283,13 @@ button:hover {
 @font-face {
     font-family: "Emizen";
     src: url("fonts/Emizen.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/JetBrainsMono-Bold.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
