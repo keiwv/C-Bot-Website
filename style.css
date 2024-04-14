@@ -89,6 +89,12 @@
     color: white;
 }
 
+.btton2 {
+    margin: 0px 0px 0px 30px;
+    background: #d8dfe8;
+    color: #0a3871;
+}
+
 aside {
     display: flex;
     justify-content: center;
@@ -289,6 +295,7 @@ button:hover {
     src: url("fonts/Emizen.otf") format("truetype");
     font-weight: 400;
     font-style: normal;
+}
 
 @font-face {
     font-family: "JetBrains Mono";
