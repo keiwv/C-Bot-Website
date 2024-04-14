@@ -1,7 +1,14 @@
+/*
+    #F1C5D9
+    #F2B3C0
+    #E6A2AD
+    #DF8A91
+*/
+
 .main-body {
-    background: #f3f5fc;
+    background: #F1C5D9;
     display: flex;
-    height: 950px;
+    height: auto;
 }
 
 .logo {
@@ -45,7 +52,7 @@
     font-family: "Inter";
     border: none;
     font-size: 32px;
-    background: #f3f5fc;
+    background: #F2B3C0;
     line-height: 150%;
     font-weight: 400px;
     font-style: normal;
@@ -72,20 +79,14 @@
 .Buttons button {
     width: 328px;
     height: 58px;
-    border: 1px solid #0a3871;
+    border: 1px solid #b298dc;
     border-radius: 15px;
-    border-color: #0a3871;
+    border-color: #b298dc;
 }
 
 .btton1 {
-    background: #0a3871;
+    background: #a663cc;
     color: white;
-}
-
-.btton2 {
-    margin: 0px 0px 0px 30px;
-    background: #d8dfe8;
-    color: #0a3871;
 }
 
 aside {
@@ -137,14 +138,14 @@ aside {
 }
 
 .footer-page {
-    background-color: #0a3871;
+    background-color: #3F403F;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 8vh;
     margin-top: 2px;
-    color: white;
+    color: #DF8A91;
     font-family: "JetBrains Mono", sans-serif;
     font-size: 15px;
     text-align: center;
@@ -171,9 +172,6 @@ button:hover {
     background: #062244;
 }
 
-.btton2:active {
-    background: #f3f5fc;
-}
 
 @media (min-width: 1920px) {
     .container {
@@ -200,7 +198,7 @@ button:hover {
 
 @media (min-height: 1030px) {
     .main-body {
-        background: #f3f5fc;
+        background: #DF8A91;
         display: flex;
         height: 950px;
     }
@@ -211,11 +209,11 @@ button:hover {
         resize: none;
         font-family: "Inter";
         font-size: 32px;
-        background: #f3f5fc;
+        background: #DF8A91;
         line-height: 150%;
         font-weight: 400px;
         font-style: normal;
-        color: #0a3871;
+        color: #ffffff;
         height: 650px;
         border: none;
     }
@@ -231,7 +229,7 @@ button:hover {
 
 @media (min-height: 1120px) {
     .main-body {
-        background: #f3f5fc;
+        background: #F1C5D9;
         display: flex;
         height: 1188px;
     }
@@ -239,9 +237,9 @@ button:hover {
 
 @media (min-height: 1300px) {
     .main-body {
-        background: #f3f5fc;
+        background: #F1C5D9;
         display: flex;
-        height: 1210px;
+        height: 91.8vh;
     }
     #input-text {
         width: 90%;
@@ -249,7 +247,7 @@ button:hover {
         resize: none;
         font-family: "Inter";
         font-size: 32px;
-        background: #f3f5fc;
+        background: #F2B3C0;
         line-height: 150%;
         font-weight: 400px;
         font-style: normal;
