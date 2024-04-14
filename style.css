@@ -1,85 +1,288 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #b8a5a5;
-    margin: 0;
-    padding: 0;
+.main-body {
+    background: #f3f5fc;
+    display: flex;
+    height: 950px;
 }
 
-header {
-    position: relative;
-    background-color: rgba(100, 37, 37, 0.5);
-    color: #ffffff;
-    padding: 1px;
-    text-align: center;
+.logo {
+    width: 640px;
+    height: 8vh;
+    padding: 40px 0 0 35px;
+    margin-bottom: 20px;
 }
 
-.header-content {
+.container {
+    width: 90vh;
+    padding-left: 250px;
+    height: 70vh;
+}
+
+.alert-minus-text {
     display: flex;
     align-items: center;
+    margin: 8px 8px 8px 0px;
+    height: 25px;
+    color: #495057;
 }
 
-.header-content img {
-    width: 200px;
-    margin-right: 20px;
+.alert-minus-text img {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
 }
 
-.header-blur {
-    flex: 1;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 36px;
-}
-
-nav ul {
-    list-style-type: none;
-    position: right;
-    padding: 0;
-}
-
-nav ul li {
+.alert-minus-text p {
     display: inline;
-    position: right;
-    margin-right: 50px;
+    width: 300px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
 }
 
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    transition: color 0.3s ease;
+#input-text {
+    width: 90%;
+    max-height: 60vh;
+    resize: none;
+    font-family: "Inter";
+    border: none;
+    font-size: 32px;
+    background: #f3f5fc;
+    line-height: 150%;
+    font-weight: 400px;
+    font-style: normal;
+    color: #0a3871;
 }
 
-nav ul li a:hover {
-    color: #ffd700;
+#input-text:focus {
+    outline: none;
+    resize: none;
+    border: none;
+    font-family: "Inter";
 }
 
-.header {
-    background-color: #ffececad;
-    color: #000000;
-    padding: 5px;
-    text-align: center;
+.Buttons {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 940px;
+    height: 50px;
+    border-radius: 8px;
+    padding-top: 8px;
 }
 
-.chatbox {
-    position: center;
-    padding-bottom: 10px;
-    width: 100%;
+.Buttons button {
+    width: 328px;
+    height: 58px;
+    border: 1px solid #0a3871;
+    border-radius: 15px;
+    border-color: #0a3871;
+}
+
+.btton1 {
+    background: #0a3871;
+    color: white;
+}
+
+.btton2 {
+    margin: 0px 0px 0px 30px;
+    background: #d8dfe8;
+    color: #0a3871;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.aside-container {
+    background-color: white;
+    width: 400px;
+    height: 900px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 1000px rgba(131, 131, 131, 0.3);
+    margin-top: 120px;
+}
+
+.aside-container .aside-img-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
     height: 100%;
-    background-color: #7e6666;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    text-align: center;
 }
 
-.chatbox .chat {
-    position: center;
-    display: flex;
-    flex-direction: column;
+.disabled
+{
+    pointer-events: none;
+    cursor: default;
+    opacity: 0;
+}
+
+.text-aside {
+    padding-top: 20px;
+}
+
+.notfound-text {
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.insert-text-decrypt {
+    padding-top: 15px;
+    font-size: 18px;
+    color: #495057;
+}
+
+.footer-page {
+    background-color: #0a3871;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 8vh;
+    margin-top: 2px;
+    color: white;
+    font-family: "Emizen", sans-serif;
+    font-size: 30px;
     text-align: center;
-    margin: 10px;
+}
+
+.footer-page img {
+
+    width: 24px;
+    height: 24px;
+    padding-left: 12px;
+}
+.footer-page a
+{
+    color: white;
+    text-decoration: none;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.btton1:active {
+    background: #062244;
+}
+
+.btton2:active {
+    background: #f3f5fc;
+}
+
+@media (min-width: 1920px) {
+    .container {
+        width: 90vh;
+        padding-left: 500px;
+        height: 80vh;
+    }
+}
+
+@media (min-width: 2555px) {
+    .container {
+        width: 80vh;
+        padding-left: 550px;
+        height: 80vh;
+    }
+    .aside-container {
+        background-color: white;
+        width: 650px;
+        height: 944px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 1000px rgba(131, 131, 131, 0.3);
+    }
+}
+
+@media (min-height: 1030px) {
+    .main-body {
+        background: #f3f5fc;
+        display: flex;
+        height: 950px;
+    }
+
+    #input-text {
+        width: 90%;
+        max-height: 80vh;
+        resize: none;
+        font-family: "Inter";
+        font-size: 32px;
+        background: #f3f5fc;
+        line-height: 150%;
+        font-weight: 400px;
+        font-style: normal;
+        color: #0a3871;
+        height: 650px;
+        border: none;
+    }
+    
+    #input-text:focus {
+        outline: none;
+        resize: none;
+        font-family: "Inter";
+        border: none;
+    }
+
+}
+
+@media (min-height: 1120px) {
+    .main-body {
+        background: #f3f5fc;
+        display: flex;
+        height: 1188px;
+    }
+}
+
+@media (min-height: 1300px) {
+    .main-body {
+        background: #f3f5fc;
+        display: flex;
+        height: 1210px;
+    }
+    #input-text {
+        width: 90%;
+        max-height: 80vh;
+        resize: none;
+        font-family: "Inter";
+        font-size: 32px;
+        background: #f3f5fc;
+        line-height: 150%;
+        font-weight: 400px;
+        font-style: normal;
+        color: #0a3871;
+        height: 850px;
+        border: none;
+    }
+    
+    #input-text:focus {
+        outline: none;
+        resize: none;
+        border: none;
+        font-family: "Inter";
+    }
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+    font-weight: 800;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "Emizen";
+    src: url("fonts/Emizen.otf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }

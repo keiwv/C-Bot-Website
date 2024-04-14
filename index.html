@@ -2,54 +2,58 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bot</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Desen/Encriptación Challenge 1</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <img src="img/logo.png" alt="logo">
-            <div class="header-blur">
-                <h1> Header </h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><button id="aboutButton">Acerca de</button></li>
-                        <li><a href="#">Chat</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
+    <div class="main-body">
+        <main>
 
-    <div class="chatbox">
-        <div class="header">
-            <h4>Chatbot</h4>
-        </div>
-        <div class="chatlogs">
-            <div class="chat bot">
-                <p>Aquí irá donde pone sus preguntas</p>
+            <div class="logo">
+                <img src="img/Logo.svg" alt="logo" />
             </div>
-        </div>
+
+            <div class="container">
+
+                <textarea name="input-text" id="input-text" cols="30" rows="10" placeholder="Introduce tu texto aquí"></textarea>
+                <div class="alert-minus-text">
+                    <img src="img/sign-exclamation.svg" alt="signo-exclamacion" />
+                    <p>Solo letras minusculas y sin acentos</p>
+                </div>
+
+                <div class="Buttons">
+                    <button class="btton1" id="btton1">Encriptar</button>
+                    <button class="btton2" id="btton2">Desencriptar</button>
+                </div>
+            </div>
+
+        </main>
+        <aside>
+
+            <div class="aside-container">
+                <div class="aside-img-text">
+                    <img id="img-puppet" src="img/Muñeco.svg" alt="">
+                    <div class="text-aside">
+                        <p class="notfound-text">Ningún mensaje fue encontrado</p>
+                        <p class="insert-text-decrypt" >Ingresa el texto que desees encriptar o desencriptar</p>
+                        <p id="textOutIn"></p>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
     </div>
-
-    <section id="aboutSection" style="display: none;">
-        <h2>Acerca de</h2>
-        <article>
-            <p>Esta página está creada por miembros de OnlyCodes.</p>
-            <p>Para más información, puedes contactar con nosotros a través de los siguientes enlaces:</p>
-            <ul>
-                <li><a href="git">git</a></li>
-                <li><a href="git">git</a></li>
-                <li><a href="hgit">git</a></li>
-            </ul>
-        </article>
-    </section>
-
-    <script src="script.js"></script>
+    <footer>
+        <div class="footer-page">
+            <p>Made by <a href="https://github.com/keiwv">keiwv</a></p>
+            <a href="https://github.com/keiwv"><img src="img/github-mark-white.svg" alt="github-keiwv"></a>
+        </div>
+    </footer>
 </body>
 
 </html>
