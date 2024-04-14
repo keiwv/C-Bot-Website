@@ -5,9 +5,8 @@
 }
 
 .logo {
-    width: 640px;
+    width: 80px;
     height: 8vh;
-    padding: 40px 0 0 35px;
     margin-bottom: 20px;
 }
 
@@ -114,8 +113,7 @@ aside {
     text-align: center;
 }
 
-.disabled
-{
+.disabled {
     pointer-events: none;
     cursor: default;
     opacity: 0;
@@ -156,11 +154,11 @@ aside {
     height: 24px;
     padding-left: 12px;
 }
-.footer-page a
-{
+
+.footer-page a {
     color: white;
     text-decoration: none;
-    
+
 }
 
 button:hover {
@@ -189,6 +187,7 @@ button:hover {
         padding-left: 550px;
         height: 80vh;
     }
+
     .aside-container {
         background-color: white;
         width: 650px;
@@ -219,7 +218,7 @@ button:hover {
         height: 650px;
         border: none;
     }
-    
+
     #input-text:focus {
         outline: none;
         resize: none;
@@ -243,6 +242,7 @@ button:hover {
         display: flex;
         height: 1210px;
     }
+
     #input-text {
         width: 90%;
         max-height: 80vh;
@@ -257,7 +257,7 @@ button:hover {
         height: 850px;
         border: none;
     }
-    
+
     #input-text:focus {
         outline: none;
         resize: none;
