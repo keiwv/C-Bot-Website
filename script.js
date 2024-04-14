@@ -1,9 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     var aboutButton = document.getElementById('aboutButton');
+    var aboutSection = document.getElementById('aboutSection');
 
     aboutButton.addEventListener('click', function () {
-        var aboutSection = document.getElementById('aboutSection');
-
-        aboutSection.scrollIntoView({ behavior: 'smooth' });
+        if (aboutSection.style.display === 'none') {
+            aboutSection.style.display = 'block';
+        } else {
+            aboutSection.style.display = 'none';
+        }
     });
 });
