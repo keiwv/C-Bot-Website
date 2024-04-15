@@ -34,6 +34,7 @@ header {
 
 .logo {
     display: flex;
+    margin: 1%;
     width: 100%;
 }
 
@@ -59,7 +60,7 @@ footer {
     width: 100%;
     color: #7e75ff;
     font-family: "JetBrains Mono", sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     height: 8vh;
     text-align: center;
 }
@@ -85,12 +86,9 @@ button:hover {
 
 footer h1 {
     text-decoration: none;
-    font-size: 20px;
-    padding-left: 15px;
+    font-size: 35px;
     font-weight: 700;
     color: transparent;
-    letter-spacing: 0.2em;
-    text-align: center;
     background: linear-gradient(
       #fd004c 16.7%,
       #fe9000 16.7%,
