@@ -151,6 +151,9 @@ aside {
 
 .text-aside {
     padding-top: 20px;
+    width: 500px;
+    margin: 5%;
+
 }
 
 .notfound-text {
