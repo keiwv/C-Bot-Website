@@ -7,6 +7,7 @@
     <script src="index.js"></script>
     <link rel="stylesheet" href="../reset.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>C-Bot</title>
 </head>
 
@@ -21,21 +22,26 @@
     </header>
     <main>
         <div class="main-body">
-            <iframe
-                src='https://webchat.botframework.com/embed/C-Bot-Testing-bot?s=ztC_HZhjrwo.ObMZq8v02eYbGbd6Hed4Wk8q3EmNx5lXCqGLZdnSNCI'
-                style='min-width: 400px; width: 95%; min-height: 100%;'></iframe>
-            <div class="input-key">
-                <p>Ingresa tu llave</p>
-                <div class="input-text"> <textarea name="user-key" id="user-key" type="password" cols="30" rows="10"
-                        placeholder="Ingresa tu llave aquí"></textarea>
-                    <div class="btns">
-                        <button id="btn1">Agregar</button>
-                        <button id="btn2">Quitar</button>
-                    </div>
+            <div >
+                <h1 id="insert-key-text" class="enabled">INGRESA UNA LLAVE</h1>
+            </div>
+            <iframe class='disabled'src=''
+                style='min-width: 400px; width: 95%; min-height: 100%; padding-left: 5%;' ,
+                id="iframe-input"></iframe>
+        </div>
+
+        <div class="input-key">
+            <p>Ingresa tu llave</p>
+            <div class="input-text"> <textarea name="user-key" id="user-key" inputmode="numeric" cols="30" rows="10"
+                    placeholder="Ingresa tu llave aquí"></textarea>
+                <div class="btns">
+                    <button id="btnAdd" onclick="concatenarYCambiar()">Agregar</button>
+                    <button id="btnRemove" onclick="desconectarBot()">Quitar</button>
+                    <button id="btnBack">Regresar</button>
                 </div>
             </div>
-
         </div>
+
     </main>
     <footer>
         <p>Made with&#160</p>

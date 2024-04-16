@@ -8,5 +8,5 @@
 3. En la seccion de "Acerca de" poner informacion basica del bot
     [ ] - Que contenga los links a los perfiles de GitHub de nosotros
 4. Agregar debajo del iframe un campo para ingresar una llave, y que se conecte automáticamente.
-   [ ] Agregar botones para conectar y desconectar la key.
-   [ ] Mostrar mensaje cuando la key sea equivocada (según la cantidad de caracteres o tamaño de la cadena)
+   [X ] Agregar botones para conectar y desconectar la key.
+   [X ] Mostrar mensaje cuando la key sea equivocada (según la cantidad de caracteres o tamaño de la cadena)
