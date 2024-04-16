@@ -5,7 +5,6 @@
     #DF8A91
 */
 
-
 body {
     background: #ffffff;
     min-height: 100vh;
@@ -21,10 +20,8 @@ main {
 
 header {
     min-height: 50px;
-    display: block;
     width: 100%;
-    height: 90px;
-    padding-bottom: 3%;
+    height: 120px;
 }
 
 .main-body {
@@ -34,14 +31,31 @@ header {
 
 .logo {
     display: flex;
-    margin: 1%;
     width: 100%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-family: "Intern", sans-serif;
+    font-weight: bolder;
+    color: #7e75ff;
+    text-shadow: 5px 5px 50px #062244;
+    letter-spacing: 1vh;
+    margin-left: 20px;
 }
 
 .logo img {
     width: 100px;
     height: auto;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .main-body {
@@ -53,13 +67,11 @@ header {
     display: block;
 }
 
-.input-key
-{
+.input-key {
     height: 5%;
 }
 
-#user-key
-{
+#user-key {
     padding-top: 2%;
     resize: none;
     font-family: "Inter";
@@ -68,7 +80,6 @@ header {
     font-style: normal;
     color: #0a3871;
     height: 5%;
-    
 }
 
 footer {
@@ -109,54 +120,72 @@ footer h1 {
     font-weight: 700;
     color: transparent;
     background: linear-gradient(
-      #fd004c 16.7%,
-      #fe9000 16.7%,
-      #fe9000 33.4%,
-      #fff020 33.4%,
-      #fff020 50.1%,
-      #3edf4b 50.1%,
-      #3edf4b 66.8%,
-      #3363ff 66.8%,
-      #3363ff 83.5%,
-      #b102b7 83.5%
+        #fd004c 16.7%,
+        #fe9000 16.7%,
+        #fe9000 33.4%,
+        #fff020 33.4%,
+        #fff020 50.1%,
+        #3edf4b 50.1%,
+        #3edf4b 66.8%,
+        #3363ff 66.8%,
+        #3363ff 83.5%,
+        #b102b7 83.5%
     );
     -webkit-text-stroke: 2px var(--yangColor);
     background-clip: text;
     -webkit-background-clip: text;
     line-height: 1.1em;
     animation: rainbow 100s linear infinite;
-  }
-  
-  @keyframes rainbow {
+}
+
+@keyframes rainbow {
     100% {
-      background-position: 0 60em;
+        background-position: 0 60em;
     }
-  }
+}
+
+.logo h1 {
+    animation: cssAnimation_0 5500ms infinite ease-in-out;
+}
+
+@keyframes cssAnimation_0 {
+    0% {
+        /* OPCIONAL */
+    }
+    50% {
+        text-shadow: 0px 10px 3px rgba(0, 0, 0, 0.3);
+        letter-spacing: 50px;
+        color: #3363ff;
+    }
+    100% {
+        /* OPCIONAL */
+    }
+}
 
 @font-face {
     font-family: "Inter";
-    src: url("fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+    src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Inter";
-    src: url("fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
-    font-weight: 800;
+    src: url("../fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+    font-weight: 1600;
     font-style: bold;
 }
 
 @font-face {
     font-family: "Emizen";
-    src: url("fonts/Emizen.otf") format("truetype");
+    src: url("../fonts/Emizen.otf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("fonts/JetBrainsMono-Bold.ttf") format("truetype");
+    src: url("../fonts/JetBrainsMono-Bold.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
