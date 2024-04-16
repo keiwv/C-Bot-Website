@@ -1,6 +1,6 @@
 body {
     background: #ffffff;
-    background-image: url("/img/background-bot-index.png");
+    background-image: url("../img/background-bot-index.png");
     background-repeat: repeat;
     background-size: 100%;
     background-position: -50px -50px;
