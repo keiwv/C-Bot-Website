@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     
+    <title>C-Bot</title>
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <img src="/img/logo.svg" alt="C-Bot Logo">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Sobre Nosotros</li>
+                    <li>Información</li>
+                    <li><a href="/bot-index/bot-index.html">Comenzar</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="aside">
+                <h1>C-Bot</h1>
+                <p>Bot en Azure diseñado para responder preguntas generales sobre el lenguaje de programación C, proporcionando información y ejemplos para ayudar a los usuarios a comprender conceptos y resolver problemas comunes.</p>
+                <button id="getStarted">Comienza ahora</button>
+            </div>
+            <img src="img/—Pngtree—robot smart friend cell phone_6674755.png" alt="Chat bot">
+        </div>
+    </main>
+    <footer>
+        <p>Made with&#160</p>
+        <h1>♡&#160</h1>
+        <p>by&#160</p>
+        <h1>OnlyCodes</h1>
+        <a href="https://github.com/OnlyCodesOrg"><img src="../img/github.svg" alt="github-logo"></a>
+    </footer>
 </body>
+<script>
+    document.getElementById('getStarted').addEventListener('click', function () {
+        window.location.href = 'bot-index/bot-index.html';
+    });
+</script>
+
 </html>

@@ -10,6 +10,7 @@ function concatenarYCambiar() {
         enableIframe();
         disableInsertText();
         isConnected = true;
+        desactivateClearBackground();
     }
 }
 
@@ -23,6 +24,7 @@ function desconectarBot() {
         isConnected = false;
         desactivarIframe();
         enableInsertText();
+        activateClearBackground();
     }
 }
 
@@ -38,14 +40,24 @@ function enableIframe() {
 
 function enableInsertText() {
     const text = document.getElementById("insert-key-text");
-    
-    text.classList.add('enabled');
-    text.classList.remove('disabled');
+
+    text.classList.add("enabled");
+    text.classList.remove("disabled");
 }
 
 function disableInsertText() {
     const text = document.getElementById("insert-key-text");
-    text.classList.add('disabled');
-    text.classList.remove('enabled');
-    
+    text.classList.add("disabled");
+    text.classList.remove("enabled");
+}
+
+function activateClearBackground() {
+    const mainBody = document.getElementById("main-body");
+
+    mainBody.classList.remove("main-body-activated");
+}
+
+function desactivateClearBackground() {
+    const mainBody = document.getElementById("main-body");
+    mainBody.classList.add("main-body-activated");
 }

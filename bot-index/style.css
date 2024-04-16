@@ -1,5 +1,9 @@
 body {
     background: #ffffff;
+    background-image: url("/img/background-bot-index.png");
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position: -50px -50px;
     min-height: 100vh;
     margin: 0;
     display: grid;
@@ -19,11 +23,20 @@ header {
 
 .main-body {
     display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    background-color: white;
+    flex-direction: column; 
+    background-color: rgba(255, 255, 255, 0.692);
     height: 90%;
     border-radius: 30px;
-    box-shadow: 5px 5px 1000px rgba(131, 131, 131, 0.3);
+    box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.3);
+}
+
+.main-body-activated {
+    display: flex;
+    flex-direction: column; 
+    background-color: #ffffff;
+    height: 90%;
+    border-radius: 30px;
+    box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.3);
 }
 
 #insert-key-text {
