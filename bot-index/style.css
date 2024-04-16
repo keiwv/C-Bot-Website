@@ -1,11 +1,11 @@
 body {
     background: #ffffff;
+    margin: 0;
     background-image: url("../img/background-bot-index.png");
     background-repeat: repeat;
     background-size: 100%;
     background-position: -50px -50px;
     min-height: 100vh;
-    margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
